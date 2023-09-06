@@ -33,5 +33,17 @@ public class Matriz {
             System.out.println("]");
         }
     }
+    public boolean posicaoValida(int x, int y){
+        return (x >= 0 && x < this.n && y >=0 && y < this.n); // Verifica se uma posição (x, y) é válida na matriz
+    }
+
+    public void algoritmoFloodFillPilha(int x, int y){
+        // Implementação do algoritmo de Preenchimento de Inundação usando uma pilha (Pilha)
+        // Preenche regiões conectadas a partir do pixel em (x, y)
+
+        if(!posicaoValida(x, y)){
+            System.out.println("[ERRO] Posicao Invalida!"); // Posição inválida
+            return;
+        }
 
 }
