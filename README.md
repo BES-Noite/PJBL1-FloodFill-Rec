@@ -40,8 +40,8 @@ A classe Fila é uma estrutura de dados que representa uma fila (queue) em progr
 
 
 ## Funcionamento do projeto 
-<p style="color💙;">1-</p> O programa começa solicitando ao usuário a dimensão da matriz. <br><br>
-<p style="color💙;">2-</p> Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br><br>
+1-  O programa começa solicitando ao usuário a dimensão da matriz. <br><br>
+2- Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br><br>
 3- O programa entra em um loop principal que permite ao usuário escolher entre várias opções:<br><br>
 *Inundar a matriz usando o algoritmo de Flood Fill com pilha.<br>
 *Inundar a matriz usando o algoritmo de Flood Fill com fila.<br>
