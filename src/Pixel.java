@@ -1,4 +1,4 @@
-package floodfill;
+package floodfill.src;
 
 public class Pixel {
 
