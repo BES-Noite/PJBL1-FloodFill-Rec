@@ -25,28 +25,33 @@ A proposta desta atividade é a implementação do algoritmo Flood Fill de forma
 utilizando Pilha e Fila para armazenamento dos pixels. 
 
 ## Algoritmo FloodFill
-Este repositório contém uma implementação do algoritmo Flood Fill usando três classes e duas interfaces. As três classes são:
+Este repositório contém uma implementação do algoritmo Flood Fill utilizando 5 classes: <br>
 
-* Pixel: Representa um pixel com coordenadas e uma cor. Implementa InterfacePixel. <br>
-* Node: Representa um nó usado em listas encadeadas para armazenar objetos Pixel. Implementa InterfaceNode. <br>
-* Main: Contém o método principal para demonstrar o algoritmo Flood Fill. <br>
-As duas interfaces são: <br>
+* FloodFill: O programa FloodFill é uma aplicação interativa que permite ao usuário criar uma matriz e realizar operações de preenchimento de matriz usando os algoritmos de Flood Fill com pilha ou fila. Ele também oferece a funcionalidade de visualizar a matriz atual e sair do programa quando desejado.  <br>
+* Matriz: A classe Matriz é responsável por representar uma matriz de pixels e implementar os algoritmos de Flood Fill com pilha e fila para inundar áreas da matriz.  <br>
+* Pixel: A classe Pixel representa um elemento individual em uma matriz de pixels e é usada pelo programa Flood Fill. Essa classe é usada para representar os pixels na matriz durante as operações de Flood Fill, onde os valores dos pixels podem ser modificados para indicar áreas inundadas ou vazias. Ela facilita a manipulação e o gerenciamento das informações associadas a cada pixel na matriz.<br>
+* Pilha: A classe Pilha é uma estrutura de dados que representa uma pilha (stack) em programação. Ela é utilizada para armazenar elementos em um formato "Last-In, First-Out" (LIFO), onde o último elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com pilha, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio LIFO da pilha. <br>
+* Fila: A classe Fila é uma estrutura de dados que representa uma fila (queue) em programação. Ela é utilizada para armazenar elementos em um formato "First-In, First-Out" (FIFO), onde o primeiro elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com fila, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio FIFO da fila. 
 
-* InterfacePixel: Define métodos relacionados às propriedades do pixel. <br>
-* InterfaceNode: Define métodos para nós de listas encadeadas.
-
-## Implementação 
-### Classe Pixel 
-A classe Pixel representa um pixel com coordenadas e uma cor. Inclui métodos para pintar pixels adjacentes e verificar limites. <br>
-
-### Classe Node 
-A classe Node representa um nó de lista encadeada que contém um objeto Pixel. Ela fornece métodos para inserir e remover elementos da pilha, além de inserir e remover elementos da fila. Adicionalmente, possui um método para exibir a lista encadeada.
-
-### Main
-A classe Main contém o método main que demonstra o algoritmo Flood Fill. Ela cria instâncias das classes Pixel e Node e mostra como usar o algoritmo baseado em pilha para preencher pixels adjacentes.
 
 ## Funcionamento do projeto 
-![Screenshot 2023-08-30 at 19 38 20](https://github.com/BES-Noite/PjBL1-FloodFill/assets/118938358/d488e2d8-9d34-4162-8cb4-10059abc7ba0)
+1- O programa começa solicitando ao usuário a dimensão da matriz. <br>
+2- Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br>
+3- O programa entra em um loop principal que permite ao usuário escolher entre várias opções:<br>
+Inundar a matriz usando o algoritmo de Flood Fill com pilha.<br>
+Inundar a matriz usando o algoritmo de Flood Fill com fila.<br>
+Visualizar a matriz atual.<br>
+Sair do programa.<br>
+4- Quando o usuário escolhe inundar a matriz com pilha ou fila, ele é solicitado a fornecer as coordenadas (x, y) a partir das quais deseja iniciar o preenchimento da matriz.<br>
+5- O algoritmo de Flood Fill correspondente é executado a partir das coordenadas fornecidas pelo usuário, preenchendo as áreas conectadas na matriz.<br>
+6- Quando o usuário escolhe visualizar a matriz, o programa exibe a matriz atual no console.<br>
+7- Se o usuário escolher sair, o programa encerra a execução com uma mensagem de saída.<br>
+8- O programa continua a executar até que o usuário escolha sair, permitindo que o usuário realize várias operações na matriz.<br>
+![image](https://github.com/BES-Noite/PJBL1-FloodFill-Rec/assets/91105011/3ba658fe-cff5-4672-a973-9db55c4f0c63)
+![image](https://github.com/BES-Noite/PJBL1-FloodFill-Rec/assets/91105011/89798863-87d7-4358-b6cf-ddb441e3fbe1)
+
+
+
 
 ## Uso 
 Para utilizar o projeto, siga os passos abaixo:
