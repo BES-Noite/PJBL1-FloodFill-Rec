@@ -1,4 +1,4 @@
-package floodfill;
+package floodfill.src;
 
 import java.util.Scanner;
 
