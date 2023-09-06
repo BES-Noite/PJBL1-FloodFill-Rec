@@ -46,4 +46,28 @@ public class Matriz {
             return;
         }
 
+        if(this.pixels[x][y].getValor() != 1){
+            System.out.println("[ERRO] Posição não pode ser inundada!"); // O pixel não pode ser inundado
+            return;
+        }
+
+        Pilha p = new Pilha(); // Cria uma pilha para o algoritmo
+        p.empilhar(pixels[x][y]); // Empilha o pixel inicial
+
+        while(!p.vazio()){
+            Pixel pixel = p.desempilhar(); // Desempilha um pixel
+
+            if(pixel.getValor() == 1){
+                pixel.setValor(2); // Define o pixel como inundado
+                int i = pixel.getX();
+                int j = pixel.getY();
+
+                // Verifica e empilha os pixels vizinhos
+                if(posicaoValida(i + 1, j) && this.pixels[i+1][j].getValor() == 1) p.empilhar(this.pixels[i+1][j]);
+                if(posicaoValida(i - 1, j) && this.pixels[i-1][j].getValor() == 1) p.empilhar(this.pixels[i-1][j]);
+                if(posicaoValida(i, j + 1) && this.pixels[i][j+1].getValor() == 1) p.empilhar(this.pixels[i][j+1]);
+                if(posicaoValida(i, j - 1) && this.pixels[i][j-1].getValor() == 1) p.empilhar(this.pixels[i][j-1]);
+            }
+        }
+    }
 }
