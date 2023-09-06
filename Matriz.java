@@ -70,4 +70,38 @@ public class Matriz {
             }
         }
     }
+    public void algoritmoFloodFillFila(int x, int y){
+        // Implementação do algoritmo de Preenchimento de Inundação usando uma fila (Fila)
+        // Preenche regiões conectadas a partir do pixel em (x, y)
+
+        if(!posicaoValida(x, y)){
+            System.out.println("[ERRO] Posicao Invalida!"); // Posição inválida
+            return;
+        }
+
+        if(this.pixels[x][y].getValor() != 1){
+            System.out.println("[ERRO] Posição não pode ser inundada!"); // O pixel não pode ser inundado
+            return;
+        }
+
+        Fila f = new Fila(); // Cria uma fila para o algoritmo
+        f.inserir(pixels[x][y]); // Insere o pixel inicial na fila
+
+        while(!f.vazio()){
+            Pixel pixel = f.remover(); // Remove um pixel da fila
+
+            if(pixel.getValor() == 1){
+                pixel.setValor(2); // Define o pixel como inundado
+                int i = pixel.getX();
+                int j = pixel.getY();
+
+                // Verifica e insere na fila os pixels vizinhos
+                if(posicaoValida(i + 1, j) && this.pixels[i+1][j].getValor() == 1) f.inserir(this.pixels[i+1][j]);
+                if(posicaoValida(i - 1, j) && this.pixels[i-1][j].getValor() == 1) f.inserir(this.pixels[i-1][j]);
+                if(posicaoValida(i, j + 1) && this.pixels[i][j+1].getValor() == 1) f.inserir(this.pixels[i][j+1]);
+                if(posicaoValida(i, j - 1) && this.pixels[i][j-1].getValor() == 1) f.inserir(this.pixels[i][j-1]);
+            }
+        }
+    }
 }
+
