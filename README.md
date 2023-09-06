@@ -27,7 +27,7 @@ utilizando Pilha e Fila para armazenamento dos pixels.
 ## Algoritmo FloodFill
 Este repositório contém uma implementação do algoritmo Flood Fill utilizando 5 classes: <br>
 
-### FloodFill
+### FloodFill 
 O programa FloodFill é uma aplicação interativa que permite ao usuário criar uma matriz e realizar operações de preenchimento de matriz usando os algoritmos de Flood Fill com pilha ou fila. Ele também oferece a funcionalidade de visualizar a matriz atual e sair do programa quando desejado.  <br>
 ### Matriz
  A classe Matriz é responsável por representar uma matriz de pixels e implementar os algoritmos de Flood Fill com pilha e fila para inundar áreas da matriz.  <br>
@@ -40,8 +40,8 @@ A classe Fila é uma estrutura de dados que representa uma fila (queue) em progr
 
 
 ## Funcionamento do projeto 
-1- O programa começa solicitando ao usuário a dimensão da matriz. <br><br>
-2- Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br><br>
+<p style="color💙;">1-</p> O programa começa solicitando ao usuário a dimensão da matriz. <br><br>
+<p style="color💙;">2-</p> Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br><br>
 3- O programa entra em um loop principal que permite ao usuário escolher entre várias opções:<br><br>
 *Inundar a matriz usando o algoritmo de Flood Fill com pilha.<br>
 *Inundar a matriz usando o algoritmo de Flood Fill com fila.<br>
