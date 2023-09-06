@@ -27,11 +27,16 @@ utilizando Pilha e Fila para armazenamento dos pixels.
 ## Algoritmo FloodFill
 Este repositório contém uma implementação do algoritmo Flood Fill utilizando 5 classes: <br>
 
-* FloodFill: O programa FloodFill é uma aplicação interativa que permite ao usuário criar uma matriz e realizar operações de preenchimento de matriz usando os algoritmos de Flood Fill com pilha ou fila. Ele também oferece a funcionalidade de visualizar a matriz atual e sair do programa quando desejado.  <br>
-* Matriz: A classe Matriz é responsável por representar uma matriz de pixels e implementar os algoritmos de Flood Fill com pilha e fila para inundar áreas da matriz.  <br>
-* Pixel: A classe Pixel representa um elemento individual em uma matriz de pixels e é usada pelo programa Flood Fill. Essa classe é usada para representar os pixels na matriz durante as operações de Flood Fill, onde os valores dos pixels podem ser modificados para indicar áreas inundadas ou vazias. Ela facilita a manipulação e o gerenciamento das informações associadas a cada pixel na matriz.<br>
-* Pilha: A classe Pilha é uma estrutura de dados que representa uma pilha (stack) em programação. Ela é utilizada para armazenar elementos em um formato "Last-In, First-Out" (LIFO), onde o último elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com pilha, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio LIFO da pilha. <br>
-* Fila: A classe Fila é uma estrutura de dados que representa uma fila (queue) em programação. Ela é utilizada para armazenar elementos em um formato "First-In, First-Out" (FIFO), onde o primeiro elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com fila, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio FIFO da fila. 
+### FloodFill
+O programa FloodFill é uma aplicação interativa que permite ao usuário criar uma matriz e realizar operações de preenchimento de matriz usando os algoritmos de Flood Fill com pilha ou fila. Ele também oferece a funcionalidade de visualizar a matriz atual e sair do programa quando desejado.  <br>
+### Matriz
+ A classe Matriz é responsável por representar uma matriz de pixels e implementar os algoritmos de Flood Fill com pilha e fila para inundar áreas da matriz.  <br>
+ ### Pixel 
+A classe Pixel representa um elemento individual em uma matriz de pixels e é usada pelo programa Flood Fill. Essa classe é usada para representar os pixels na matriz durante as operações de Flood Fill, onde os valores dos pixels podem ser modificados para indicar áreas inundadas ou vazias. Ela facilita a manipulação e o gerenciamento das informações associadas a cada pixel na matriz.<br>
+###Pilha
+A classe Pilha é uma estrutura de dados que representa uma pilha (stack) em programação. Ela é utilizada para armazenar elementos em um formato "Last-In, First-Out" (LIFO), onde o último elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com pilha, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio LIFO da pilha. <br>
+### Fila
+A classe Fila é uma estrutura de dados que representa uma fila (queue) em programação. Ela é utilizada para armazenar elementos em um formato "First-In, First-Out" (FIFO), onde o primeiro elemento inserido é o primeiro a ser removido. Essa classe é fundamental para implementar a funcionalidade de algoritmo de Flood Fill com fila, permitindo que os pixels a serem processados sejam rastreados de acordo com o princípio FIFO da fila. 
 
 
 ## Funcionamento do projeto 
