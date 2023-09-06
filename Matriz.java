@@ -23,5 +23,15 @@ public class Matriz {
             }
         }
     }
+    public void imprimir(){
+        for (int i = 0; i < this.n; i++) {
+            System.out.print("[");
+            for (int j = 0; j < this.n; j++) {
+                if(j < this.n - 1) System.out.print(pixels[i][j].getValor() + ", "); // Imprime o valor do pixel
+                else System.out.print(pixels[i][j].getValor()); // Imprime o valor do pixel (último elemento na linha)
+            }
+            System.out.println("]");
+        }
+    }
 
 }
