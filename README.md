@@ -40,18 +40,18 @@ A classe Fila é uma estrutura de dados que representa uma fila (queue) em progr
 
 
 ## Funcionamento do projeto 
-1- O programa começa solicitando ao usuário a dimensão da matriz. <br>
-2- Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br>
-3- O programa entra em um loop principal que permite ao usuário escolher entre várias opções:<br>
-* Inundar a matriz usando o algoritmo de Flood Fill com pilha.<br>
-* Inundar a matriz usando o algoritmo de Flood Fill com fila.<br>
-* Visualizar a matriz atual.<br>
-* Sair do programa.<br>
-4- Quando o usuário escolhe inundar a matriz com pilha ou fila, ele é solicitado a fornecer as coordenadas (x, y) a partir das quais deseja iniciar o preenchimento da matriz.<br>
-5- O algoritmo de Flood Fill correspondente é executado a partir das coordenadas fornecidas pelo usuário, preenchendo as áreas conectadas na matriz.<br>
-6- Quando o usuário escolhe visualizar a matriz, o programa exibe a matriz atual no console.<br>
-7- Se o usuário escolher sair, o programa encerra a execução com uma mensagem de saída.<br>
-8- O programa continua a executar até que o usuário escolha sair, permitindo que o usuário realize várias operações na matriz.<br>
+1- O programa começa solicitando ao usuário a dimensão da matriz. <br><br>
+2- Uma matriz é criada com a dimensão especificada e é inicializada com valores padrão. <br><br>
+3- O programa entra em um loop principal que permite ao usuário escolher entre várias opções:<br><br>
+*Inundar a matriz usando o algoritmo de Flood Fill com pilha.<br>
+*Inundar a matriz usando o algoritmo de Flood Fill com fila.<br>
+*Visualizar a matriz atual.<br>
+*Sair do programa.<br>
+4- Quando o usuário escolhe inundar a matriz com pilha ou fila, ele é solicitado a fornecer as coordenadas (x, y) a partir das quais deseja iniciar o preenchimento da matriz.<br> <br>
+5- O algoritmo de Flood Fill correspondente é executado a partir das coordenadas fornecidas pelo usuário, preenchendo as áreas conectadas na matriz.<br><br>
+6- Quando o usuário escolhe visualizar a matriz, o programa exibe a matriz atual no console.<br><br>
+7- Se o usuário escolher sair, o programa encerra a execução com uma mensagem de saída.<br><br>
+8- O programa continua a executar até que o usuário escolha sair, permitindo que o usuário realize várias operações na matriz.<br><br>
 ![image](https://github.com/BES-Noite/PJBL1-FloodFill-Rec/assets/91105011/3ba658fe-cff5-4672-a973-9db55c4f0c63)
 ![image](https://github.com/BES-Noite/PJBL1-FloodFill-Rec/assets/91105011/89798863-87d7-4358-b6cf-ddb441e3fbe1)
 
